@@ -1,10 +1,16 @@
 <template>
   <div class="app">
-    <div class="order">
-      <button @click="handleClick('title')">by title</button>
-      <button @click="handleClick('salary')">by salary</button>
-      <button @click="handleClick('location')">by location</button>
-    </div>
+    <header>
+      <div class="title">
+        <img src="./assets/heart.svg" alt="heart">
+        <h1>Hyrule Jobs</h1>
+      </div>
+      <div class="order">
+        <button @click="handleClick('title')">by title</button>
+        <button @click="handleClick('salary')">by salary</button>
+        <button @click="handleClick('location')">by location</button>
+      </div>
+    </header>
     <JobList :jobs="jobs" :order="order"/>
   </div>
 </template>
