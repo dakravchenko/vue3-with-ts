@@ -1,17 +1,17 @@
 <template>
   <div class="app">
-    <p></p>
+    <JobList :jobs="jobs"/>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, ref, toRefs } from 'vue';
 import Job from './types/Job'
-
+import JobList from './components/JobList.vue'
 
 export default defineComponent({
   name: 'App',
-  components: {},
+  components: {JobList},
   setup(){
     // const state = reactive({
     //   name: 'Link',
